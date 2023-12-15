@@ -22,9 +22,11 @@ print("Словарь 1:", dict_1)
 print("Словарь 2:", dict_2)
 
 def find_differences(value1, value2):
-    differences = {key: (dict_1[key], dict_2[key]) for key in dict_1 if key in dict_2 and dict_1[key] != dict_2[key]}
+    differences = {key: (dict_1.get(key), dict_2.get(key)) for key in set(dict_1) | set(dict_2)}
     return differences
 value1 = formatted_list[0]
 value2 = formatted_list[1]
 differences = find_differences(value1, value2)
-print("Отличия:", differences)
+for key, values in differences.items():
+    if values[0] != values[1]:
+        print(f"{key}: {values[0]} в первом словаре, {values[1]} во втором словаре")
