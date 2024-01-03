@@ -18,15 +18,19 @@ for value in formatted_list:
 dict_1 = {pair.split(".")[0]: pair.split(".")[1] for pair in formatted_list[0].split(";")}
 dict_2 = {pair.split(".")[0]: pair.split(".")[1] for pair in formatted_list[1].split(";")}
 
-print("Словарь 1:", dict_1)
-print("Словарь 2:", dict_2)
+print("Dictionary 1:", dict_1)
+print("Dictionary 2:", dict_2)
 
-def find_differences(value1, value2):
-    differences = {key: (dict_1.get(key), dict_2.get(key)) for key in set(dict_1) | set(dict_2)}
-    return differences
+
+def find_differences():
+    differences_ = {key_: (dict_1.get(key_), dict_2.get(key_)) for key_ in set(dict_1) | set(dict_2)}
+    return differences_
+
+
 value1 = formatted_list[0]
 value2 = formatted_list[1]
-differences = find_differences(value1, value2)
+differences = find_differences()
+print(differences)
 for key, values in differences.items():
     if values[0] != values[1]:
-        print(f"{key}: {values[0]} в первом словаре, {values[1]} во втором словаре")
+        print(f"{key}: {values[0]} first dict, {values[1]} во втором словаре")
