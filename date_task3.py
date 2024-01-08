@@ -1,19 +1,15 @@
 from datetime import datetime
 
+
 def calculate_age_and_zodiac(birthdate):
-    try:
-        birthdate = datetime.strptime(birthdate, "%d-%m-%Y")
+    birthdate = datetime.strptime(birthdate, "%d-%m-%Y")
+    current_date = datetime.now()
+    age = current_date.year - birthdate.year - (
+                (current_date.month, current_date.day) < (birthdate.month, birthdate.day))
+    zodiac_sign = determine_zodiac_sign(birthdate.month, birthdate.day)
 
-        current_date = datetime.now()
+    return {"возраст": age, "знак_зодиака": zodiac_sign}
 
-        age = current_date.year - birthdate.year - ((current_date.month, current_date.day) < (birthdate.month, birthdate.day))
-
-        zodiac_sign = determine_zodiac_sign(birthdate.month, birthdate.day)
-
-        return {"возраст": age, "знак_зодиака": zodiac_sign}
-
-    except ValueError as e:
-        return f"Ошибка: {e}"
 
 def determine_zodiac_sign(month, day):
     if (month == 3 and day >= 21) or (month == 4 and day <= 19):
@@ -40,6 +36,7 @@ def determine_zodiac_sign(month, day):
         return "Водолей"
     else:
         return "Рыбы"
+
 
 birthdate = "29-08-1993"
 result = calculate_age_and_zodiac(birthdate)
