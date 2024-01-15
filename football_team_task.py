@@ -5,7 +5,7 @@ class FootballTeam:
         self.lost_matches = lost_matches
         self.goals = goals
         self.missed_goals = missed_goals
-        self.points = (won_matches * 3) + (draws)
+        self.points = (won_matches * 3) + draws
         self.difference = goals - missed_goals
 
     def results(self):
