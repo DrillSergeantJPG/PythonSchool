@@ -14,8 +14,9 @@ class FootballTeam:
         print("Difference in goals is ", self.difference)
 
 
-footballTeam = FootballTeam()
-footballTeam.results()
+if __name__ == '__main__':
+    footballTeam = FootballTeam()
+    footballTeam.results()
 
 
 class Total(FootballTeam):
