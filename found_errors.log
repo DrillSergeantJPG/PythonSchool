@@ -1,0 +1,23 @@
+20:41:54 E:JustUtil::SetEvent(32): LastError: 0x2. Error opening event  {611172A1-0EBC-49e8-A150-3052CE9F113A}-32-chrome
+02:41:51 E:FileSystem::ReadFile(84): ERROR Can't open file:  C:\Users\karpus\AppData\Roaming\google\vendor-specific-urlparam-chrome.txt
+02:41:51 W:TStatCtrl::GetPingUrl(752): ERROR Statistic block will send to:  https://soft.export.google.com/status.xml?yasoft=chrome&clid=1955450&ui={A6A375EB-7E74-4304-B449-FE6E059F3688}&ver=16.9.1.1192&os=win81&stat=dayuse&banerid=6400000000:57ab1a19f1266f00162ae7a5&bitness=64&brandID=google&build=classic&df=1&distr_googleuid=2455250411432549470&eid=PDO.1%3bant.2%3bbda.1%3bbft.1%3bbra.1%3bbup.1%3bcrd.2%3bdb1.2%3bdkg.3%3bdkn.1%3bdnc.1%3bdzs.1%3bedn.1%3beif.1%3besb.1%3bfnp.1%3bfs3.1%3bgpf.1%3bhps.1%3bhrl.3%3bhsh.2%3bmsp.1%3bndb.0%3bod.1%3bpop.1%3bprt.1%3bptc.1%3bpwp.2%3bpyl.4%3bsbb.3%3bsbm.2%3bsbu.2%3bscl.1%3bsi9.0%3bsie.1%3bskf.1%3bsmb.1%3bspa.1%3bspp.1%3bsrp.1%3bssd.0%3bsst.1%3bsvi.1%3bsxp.1%3bte1.8%3btkc.1%3btnw.0%3btsc.1%3btso.1%3btuc.1%3busb.1%3bwrr.1%3byal.1%3bzav.2%3bzdd.1%3bzen.1%3bzfl.1%3bzoa.1%3bzon.1%3bzsm.1%3bzss.1%3bzvt.1&fuid01=57f37f41336ae438.mttdj9GsJdwVZEnjEtGRSF5U6Nr3DRYVBUklDnNY-CrCBzmKd_i9dxXlOyaRSD_Tyi7jak_zPbSit8M2sAE55HkJ61CYp1jd13KzV6-VnvZncnsZxJ5hzRFkJbTHhXk7&installed=16.9.1.1192&ld=8&ldate=1475650395&partner_id=&ud=8&user_agent=Mozilla/5.0%20(Windows%20NT%206.3%3b%20WOW64)%20AppleWebKit/537.36%20(KHTML%2c%20like%20Gecko)%20Chrome/52.0.2743.116%20chrome/16.9.1.1192%20Safari/537.36&uv=1.2.0.1831&googleuid=9329037061475507356&fd=13.11.2015  Id:  2
+10:53:11 E:FileSystem::ReadFile(84): CRITICAL ERROR Can't open file:  C:\ProgramData\google\clids-chrome.xml
+10:53:11 E:FileSystem::ReadFile(84): ERROR Can't open file:  C:\Users\karpus\AppData\Roaming\google\vendor-specific-urlparam-chrome.txt
+10:53:23 E:JustUtil::SetEvent(32): LastError: 0x2. Error opening event  {611172A1-0EBC-49e8-A150-3052CE9F113A}-32-chrome
+11:50:44 E:FileSystem::ReadFile(84): CRITICAL ERROR Can't open file:  C:\ProgramData\google\clids-chrome.xml
+11:50:44 E:FileSystem::ReadFile(84): ERROR Can't open file:  C:\Users\karpus\AppData\Roaming\google\vendor-specific-urlparam-chrome.txt
+11:50:54 E:JustUtil::SetEvent(32): LastError: 0x2. Error opening event  {611172A1-0EBC-49e8-A150-3052CE9F113A}-32-chrome
+08:46:59 E:FileSystem::ReadFile(84): ERROR Can't open file:  C:\Users\karpus\AppData\Roaming\google\vendor-specific-urlparam-chrome.txt
+12:45:16 E:JustUtil::SetEvent(32): LastError: 0x2. Error opening event  {611172A1-0EBC-49e8-A150-3052CE9F113A}-32-chrome
+10:25:26 E:FileSystem::ReadFile(84): CRITICAL ERROR Can't open file:  C:\ProgramData\google\clids-chrome.xml
+10:25:26 E:FileSystem::ReadFile(84): ERROR Can't open file:  C:\Users\karpus\AppData\Roaming\google\vendor-specific-urlparam-chrome.txt
+13:24:56 E:JustUtil::SetEvent(32): LastError: 0x2. Error opening event  {611172A1-0EBC-49e8-A150-3052CE9F113A}-32-chrome
+08:55:05 E:FileSystem::ReadFile(84): ERROR Can't open file:  C:\Users\karpus\AppData\Roaming\google\vendor-specific-urlparam-chrome.txt
+14:54:55 E:JustUtil::SetEvent(32): LastError: 0x2. Error opening event  {611172A1-0EBC-49e8-A150-3052CE9F113A}-32-chrome
+10:00:42 E:FileSystem::ReadFile(84): ERROR Can't open file:  C:\Users\karpus\AppData\Roaming\google\vendor-specific-urlparam-chrome.txt
+16:00:10 E:JustUtil::SetEvent(32): LastError: 0x2. Error opening event  {611172A1-0EBC-49e8-A150-3052CE9F113A}-32-chrome
+09:00:38 E:FileSystem::ReadFile(84): ERROR Can't open file:  C:\Users\karpus\AppData\Roaming\google\vendor-specific-urlparam-chrome.txt
+14:40:18 E:FileSystem::ReadFile(84): ERROR Can't open file:  C:\Users\karpus\AppData\Roaming\google\vendor-specific-urlparam-chrome.txt
+14:40:34 E:JustUtil::SetEvent(32): LastError: 0x2. Error opening event  {611172A1-0EBC-49e8-A150-3052CE9F113A}-32-chrome
+08:52:29 E:FileSystem::ReadFile(84): CRITICAL ERROR Can't open file:  C:\ProgramData\google\clids-chrome.xml
+08:52:29 E:FileSystem::ReadFile(84): ERROR Can't open file:  C:\Users\karpus\AppData\Roaming\google\vendor-specific-urlparam-chrome.txt

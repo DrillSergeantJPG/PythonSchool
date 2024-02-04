@@ -1,31 +1,40 @@
 class FootballTeam:
-    def __init__(self, won_matches=5, draws=2, lost_matches=2, goals=7, missed_goals=3):
+    def __init__(self, won_matches=0, draws=0, lost_matches=0, goals=0, missed_goals=0):
         self.won_matches = won_matches
         self.draws = draws
         self.lost_matches = lost_matches
         self.goals = goals
         self.missed_goals = missed_goals
-        self.points = (won_matches * 3) + draws
-        self.difference = goals - missed_goals
 
     def results(self):
         print(self.goals, " : ", self.missed_goals)
-        print("Points", self.points)
-        print("Difference in goals is ", self.difference)
+        print("Points", self.won_matches*3 + self.draws)
+        print("Difference in goals is ", self.goals - self.missed_goals)
+
+    def add_result(self, scored, missed):
+        self.goals += scored
+        self.missed_goals += missed
+        if scored > missed:
+            self.won_matches += 1
+        elif scored < missed:
+            self.lost_matches += 1
+        else:
+            self.draws += 1
 
 
-if __name__ == '__main__':
-    footballTeam = FootballTeam()
-    footballTeam.results()
-
-
-class Total(FootballTeam):
-    def __init__(self):
-        super().__init__(won_matches=5, draws=2, lost_matches=2, goals=7, missed_goals=3)
-
+class FootballTeamExtended(FootballTeam):
     def total_games_played(self):
         return self.won_matches + self.draws + self.lost_matches
 
 
-total = Total()
-print("Total games played: ", total.total_games_played())
+if __name__ == '__main__':
+    dynamo = FootballTeamExtended()
+    dynamo.results()
+    dynamo.add_result(2, 2)
+    dynamo.results()
+    dynamo.add_result(3, 2)
+    dynamo.results()
+    dynamo.add_result(3, 5)
+    dynamo.results()
+    print(dynamo.total_games_played())
+

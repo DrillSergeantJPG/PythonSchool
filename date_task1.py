@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
 
@@ -12,9 +12,7 @@ def find_next_friday_13(count):
 
         if current_date.weekday() == 4:
             friday_13_dates.append(current_date)
-            current_date += relativedelta(months=1)
-        else:
-            current_date += relativedelta(months=1)
+        current_date += relativedelta(months=1)
 
     return friday_13_dates
 

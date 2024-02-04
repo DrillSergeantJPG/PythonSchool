@@ -1,3 +1,7 @@
+import sys
+from time import sleep
+
+
 class Car:
     def __init__(self, brand, model):
         self.brand = brand
@@ -19,10 +23,14 @@ class ElectricCar(Car):
         print(f"Current battery charge is: {self.current_battery_charge}")
 
 
-def get_fuel():
-    if gas_car.current_fuel_level < "100%":
+def get_fuel(car):
+    if car.current_fuel_level < 100:
         print("Fueling your car to 100%...")
-        gas_car.current_fuel_level = "100%"
+        for i in range(car.current_fuel_level, 100):
+            print(f"Car is fueled by:   {i}")
+            sleep(1)
+            sys.stdout.flush()
+        car.current_fuel_level = 100
         print("Car has a full tank")
     else:
         print("Car has a full tank already")
@@ -40,9 +48,9 @@ class GasCar(Car):
         print(f"Current fuel level is: {self.current_fuel_level}")
 
 
-electric_car = ElectricCar("Tesla", "Model S", 500, "15%")
+electric_car = ElectricCar("Tesla", "Model S", 500, 15)
 electric_car.display_info()
 
-gas_car = GasCar("Toyota", "Camry", 8.5, "10%")
+gas_car = GasCar("Toyota", "Camry", 8.5, 10)
 gas_car.display_info()
-get_fuel()
+get_fuel(gas_car)
